@@ -7,7 +7,7 @@
   const handleReplyClick = async () => {
     if (active && !reply) { //อยากให้ active เป็น true และ reply ไม่ว่าง ถ้าว่างจะส่งทำไม 5555
       let res = await fetch(
-        `http://localhost:1234/api/posts/${$pages.replace("PostID?id=","")}/reply`,
+        `https://dimmiddimmid.herokuapp.com/api/posts/${$pages.replace("PostID?id=","")}/reply`,
         {
           method: "POST",
           body: JSON.stringify({

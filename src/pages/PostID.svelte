@@ -6,7 +6,7 @@
   let topic;
   const fetchPostbyid = async () => {
     let id = $pages.replace("PostID?id=", "");
-    let res = await fetch(`http://localhost:1234/api/posts/${id}`);
+    let res = await fetch(`https://dimmiddimmid.herokuapp.com/api/posts/${id}`);
     let data = await res.json();
     if (res.ok) {
       topic = data.topic;
